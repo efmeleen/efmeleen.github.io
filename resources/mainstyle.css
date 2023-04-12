@@ -1,0 +1,87 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Georgia, sans-serif;
+    color: black;
+    
+    font-size: 16px; /*TODO: write a script to change this for mobile*/
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#linkbox{
+    border: 0.1875rem solid black;
+    border-radius: 0.3125rem;
+    border-radius: 0.375rem;
+    margin: auto;
+    width: fit-content;
+    padding-bottom: 0;
+}
+
+#nameheader{
+    /* border: 1px solid red; */
+    display: block;
+    margin: 0.625rem;
+    font-size: 2.5rem;
+}
+
+.link-button{
+    border: 0.125rem solid black;
+    border-radius: 0.3125rem;
+    border-radius: 0.375rem;
+    
+    display: block;
+    width: 100% - 1.25rem;
+    height: fit-content;
+    margin: 0.625rem;
+    margin-top: 0;
+    padding: 0.625rem;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    transition: background-color 0.125s;
+}
+
+.link-icon{
+    height: 2.5rem;
+    margin-right: 0.625rem;
+}
+
+.link-label{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* unvisited link */
+.link-button:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+.link-button:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.link-button:hover {
+  text-decoration: none;
+  background-color: #eee;
+}
+
+/* selected link */
+.link-button:active {
+  text-decoration: none;
+  background-color: #ccc;
+}
